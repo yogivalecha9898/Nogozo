@@ -1,0 +1,190 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 110px
+}
+
+.search {
+    top: -100%;
+    background: #DDDDDD;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    z-index: 1;
+    padding: 50px;
+    transition-duration: 0.3s
+}
+
+.search nav, form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 100px 0
+}
+
+.search nav h1 {
+    font-size: 4em;
+    color: #3EDBF0
+}
+
+.search nav i {
+    font-size: 2em;
+    cursor: pointer
+}
+.search form i {
+    font-size: 2em;
+    color: #ADACA7;
+    cursor: pointer
+}
+
+.search form {
+    margin: 0;
+    padding: 0 20px;
+    border-bottom: 2px solid #F1F1F1;
+    /* padding: 20px 0; */
+}
+
+.search form input{
+    font-size: 2em;
+    padding: 20px 0;
+    border: none;
+    outline: none
+}
+
+.left, .right, .center {
+    padding: 1px;
+    width: 33%
+}
+
+.middle {
+    color: #3EDBF0;
+    font-size: 2em;
+}
+
+.left p, .right i {
+    margin: 0 10px;
+    cursor: pointer
+}
+
+.left p {
+    color: #28DF99;
+    font-weight: bolder;
+}
+
+.right i {
+    font-size: 1.5em;
+    margin: 0 20px
+}
+
+.menu {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    z-index: 1;
+    background: #fff;
+    left: -100%;
+    transition-duration: 0.5s
+}
+
+.menu section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.menu section i {
+    margin-right: 60px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transform-origin: center;
+    transition-duration: 0.2s
+}
+
+.menu section i:hover {
+    transform: rotateZ(180deg)
+}
+
+.menu section h1 {
+    margin: 40px 0 50px 30px;
+    font-size: 2em;
+    color: #3EDBF0
+}
+
+.menu p {
+    margin: 20px 0 20px 30px;
+    font-size: 1.2em
+}
+
+.menu hr {
+    border: none;
+    border-top: 2px solid #D1E8E4;
+    width: 90%;
+    margin: auto
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        background: yellow;
+        height: 80px
+    }
+    .left {
+        display: none
+    }
+    .middle {
+        font-size: 1.5em;
+    }
+    .right i {
+        font-size: 1.2em;
+        margin: 0 20px
+    }
+    .search nav h1 {
+        font-size: 3.5em
+    }
+    .search nav i {
+        font-size: 2em
+    }
+    .search form i, .search form input {
+        font-size: 1.5em
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .frame {
+        height: 500px
+    }
+    .search nav h1 {
+        font-size: 3em
+    }
+    .search nav i {
+        font-size: 1.5em
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .frame {
+        height: 450px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .frame {
+        height: 400px
+    }
+    .search nav h1 {
+        font-size: 2em
+    }
+    .search nav i {
+        font-size: 1em
+    }
+    .search form i, .search form input {
+        font-size: 1em
+    }
+    .menu {
+        width: 100%;
+        text-align: center
+    }
+}

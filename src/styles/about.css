@@ -1,0 +1,12 @@
+.about {
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.about h1, .about h3, .about section {
+    margin: 10px 0;
+    text-align: center;
+}
